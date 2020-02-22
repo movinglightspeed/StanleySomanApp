@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails simple CRUD Blog App
+
+This README would normally document whatever steps are necessary to get the application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+$ ruby -v ruby 2.3.3p222 (2016-11-21 revision 56859) [i386-mingw32]
 
-* System dependencies
+$ rails -v Rails 5.1.7
 
-* Configuration
+$ gem -v 2.5.2
 
-* Database creation
+$ bundler -v Bundler version 1.15.3
 
-* Database initialization
+How to run the test suite Put the main folder in C:/Sites
+Then start RubyonRails 
+rails s
+Then visit localhost:3000 to see the live blog with CRUD features.
 
-* How to run the test suite
+Deployment instructions The username and password to delete, add post are as follows:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+user: test
+pass: 1234
