@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stanley Soman App</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<a class="navbar-brand" href="#">Stanley Soman App</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse nav-link" id="navbarsExampleDefault">
+ <ul class="navbar-nav mr-auto">
+   <li class="nav-item">
+     <%= link_to "Home", home_path %>
+   </li>
+ </ul>
+ <form class="form-inline my-2 my-lg-0">
+<%= link_to "Create Post", new_post_path %>
+ </form>
+</div>
+</nav>
+
+<div class="container">
+    <%= yield %>
+    </div>
+<!--
+    // yield is where all the views we create will be output-->
+
+  </body>
+</html>
